@@ -14,7 +14,6 @@ const Navbar = ( props ) => {
                 {links.map((item, index) => (
                     <Link key={index}>{item}</Link>
                 ))}
-                
             </LinksContainer>
 
         </NavbarWrapper>
