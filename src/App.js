@@ -1,10 +1,13 @@
-import './App.css';
+import { useState } from "react" ;
+import Navbar from "./Components/Navbar" ;
 
 function App() {
+  const [ menu , setMenu ] = useState(false) ;
+  
   return (
-    <div className="App">
-      Yow it is working
-    </div>
+	<div className="app">
+		<Navbar state={menu} handleClick={setMenu} />
+	</div>
   );
 }
 
