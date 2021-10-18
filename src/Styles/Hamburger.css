@@ -8,8 +8,13 @@ button.hamburger {
   height: 20px ;
   margin: 0 20px ;
   align-self: center ;
+  display: none ;
 }
-
+@media screen and (max-width: 700px) {
+  button.hamburger {
+    display: block ;
+  }
+}
 button.hamburger > span {
   height: 3px ;
   width: 100% ;

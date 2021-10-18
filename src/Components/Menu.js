@@ -51,7 +51,6 @@ const MenuWrapper = styled.div`
     transition: .3s ease-out ${props => props.open ? "0s":".5s"} ;
     transform: ${props => props.open ? "none":"translate(-100%)"};
     padding: 25px 0 ;
-
     & > button {
         margin-left: 30px ;
         margin-bottom: 45px ;
