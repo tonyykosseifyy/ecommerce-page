@@ -51,6 +51,12 @@ const Body = () => {
                     iasjdajiosjdaso poajsdoajs poajsdoaj oajs pd
                     oaisd paodqwodnjvn sdl
                 </p>
+                <h3>
+                    $125.00 
+                    <span className='sale-span'>50%</span>
+                    <br />
+                    <p>$250.00</p>
+                </h3>
             </RightBodyWrapper>
         </BodyWrapper>
     );

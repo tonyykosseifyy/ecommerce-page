@@ -37,3 +37,28 @@
     margin-top: 40px ;
     margin-bottom: 20px;
 }
+.right-body-wrapper > h3  {
+    font-size: 1.4rem;
+}
+.right-body-wrapper > h3 > .sale-span {
+    background-color: #FEF0E3 ;
+    border-radius: 8px ;
+    padding: 6px 7px ;
+    color: var(--Orange); 
+    font-size: 16px;
+    margin-left: 10px
+} 
+
+.right-body-wrapper > h3 > p {
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 16px;
+    text-decoration-color: var(--Dark-grayish-blue);;
+}
+
+@media screen and (max-width: 700px){
+    .right-body-wrapper br {
+        display: none ;
+    }
+}
+
