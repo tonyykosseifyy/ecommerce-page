@@ -1,8 +1,8 @@
 import styled from "styled-components" ;
 import Hamburger from "./Hambuger";
-import Test from "./Test";
 import logo from "../Assets/logo.svg" ;
-
+//import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { IconButton } from '@mui/material';
 const links = ["Collections" , "Men", "Women","About","Contact"] ;
 
 const Navbar = ( props ) => {
@@ -16,7 +16,11 @@ const Navbar = ( props ) => {
                     <Link key={index}>{item}</Link>
                 ))}
             </LinksContainer>
-            <Test />
+                    
+            <LeftNavbarContainer>
+                <IconButton></IconButton>
+                <IconButton></IconButton>
+            </LeftNavbarContainer>
         </NavbarWrapper>
     );
 };
@@ -57,4 +61,10 @@ const Link = styled.a`
         color: black ;
         border-bottom: 3px solid var(--Orange)
     }
+`
+
+const LeftNavbarContainer = styled.div`
+    margin-left: auto ;
+    display: flex ;
+
 `
