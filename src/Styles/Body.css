@@ -1,4 +1,39 @@
-.body {
-    background-color: red ;
-    height: calc(100vh - 80px) ;
+.image-overflow {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100% ;
+    background: rgb(194, 194, 194, 0) ;
+    transition: .3s ease-out ;
+    outline: 2px solid transparent;
+    border-radius: 12px;
+}
+
+.image-overflow:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.image-active {
+    background: rgba(255, 255, 255, 0.4) ;
+    outline: 3px solid var(--Orange) ;
+}
+
+.right-body-wrapper {
+    max-width: 420px;
+}
+
+.right-body-wrapper > h4 {
+    color: var(--Orange);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.right-body-wrapper > h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.right-body-wrapper > p {
+    color:var(--Dark-grayish-blue);
+    margin-top: 40px ;
+    margin-bottom: 20px;
 }
