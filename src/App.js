@@ -2,7 +2,7 @@ import { useState } from "react" ;
 import Navbar from "./Components/Navbar" ;
 
 function App() {
-  const [ menu , setMenu ] = useState(false) ;
+  const [ menu , setMenu ] = useState(null) ;
   
   return (
 	<div className="app">

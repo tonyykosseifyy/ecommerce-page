@@ -1,5 +1,6 @@
 import styled from "styled-components" ;
 import Hamburger from "./Hambuger";
+import Test from "./Test";
 import logo from "../Assets/logo.svg" ;
 
 const links = ["Collections" , "Men", "Women","About","Contact"] ;
@@ -15,7 +16,7 @@ const Navbar = ( props ) => {
                     <Link key={index}>{item}</Link>
                 ))}
             </LinksContainer>
-
+            <Test />
         </NavbarWrapper>
     );
 };

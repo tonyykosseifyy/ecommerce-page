@@ -24,40 +24,73 @@ button.hamburger > span.line1 {
 }
 button.hamburger > span.line2 {
   top: 9px ;
-  transition: 0s ;
+  transition: .3s ease-out ;
 }
 button.hamburger > span.line3 {
   top: 18px ;
 }
 
 button.clicked > span.line2  {
-  transition-property: opacity ;
-  transition-delay: .4s ;
   opacity: 0 ;
+  transition-delay: .3s ;
+  transform: translateX(-20px) ;
 }
-button.clicked > span.line1 , button.clicked > span.line3 {
-  animation-duration: 1s ;
-  animation-fill-mode: both;
-  transform-origin: right;
+button.reverse > span.line2  {
+  opacity: 1 ;
+  transition-delay: .4s ;
+  transform: none ;
+}
+button.hamburger > span.line1 , button.hamburger > span.line3 {
+  animation-duration: .6s ;
+  animation-fill-mode: both ;
+  transform-origin: center ;
+  animation-direction: normal;
+}
 
-}
-button.clicked > span.line1 {
+
+button.clicked > span.line1  {
   animation-name: spring ;
 }
+button.reverse > span.line1 {
+  animation-name : springreverse;
+} 
 button.clicked > span.line3 {
   animation-name: spring3 ;
 }
-
+button.reverse > span.line3 {
+  animation-name: spring3reverse ;
+}
 @keyframes spring {
   0% {
-    top: 0px ;
+    top: 18px ;
   }
   50% {
     top: 9px ;
     transform: none ;
+    width: 100% ;
+  }
+  99% {
+    width:32px;
   }
   100% {
-    transform: rotate(-45deg) ;
+    width:32px;
+    top: 9px;
+    transform: translateX(-2.5px) rotate(-45deg) ;
+  }
+}
+@keyframes springreverse {
+  0% {
+    width:32px;
+    top: 9px;
+    transform: translateX(-2.5px) rotate(-45deg) ;
+  }
+  1% {
+    width:32px;
+  }
+  100% {
+    top: 0px ;
+    transform: none ;
+    width: 100% ;
   }
 }
 
@@ -68,8 +101,30 @@ button.clicked > span.line3 {
   50% {
     top: 9px ;
     transform: none ;
+    width: 100%;
+  }
+  99% {
+    width:32px;
   }
   100% {
-    transform: rotate(45deg) ;
+    width:32px;
+    top: 9px;
+    transform: translateX(-2.5px) rotate(45deg) ;
+  }
+}
+
+@keyframes spring3reverse {
+  0% {
+    width:32px;
+    top: 9px;
+    transform: translateX(-2.5px) rotate(45deg) ;
+  }
+  1% {
+    width:32px;
+  }
+  100% {
+    top: 18px ;
+    transform: none ;
+    width: 100% ;
   }
 }
