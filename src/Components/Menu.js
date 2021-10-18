@@ -5,7 +5,7 @@ const links = ["Collections" , "Men", "Women","About","Contact"] ;
 
 const Menu = (props) => {
     return (
-        <MenuWrapper open={props.state}>
+        <MenuWrapper open={props.state} >
             <Hamburger {...props} />
             <LinkContainer>
                 { links.map((item , index) => (
