@@ -34,8 +34,8 @@
 }
 .right-body-wrapper > p {
     color:var(--Dark-grayish-blue);
-    margin-top: 40px ;
-    margin-bottom: 20px;
+    margin-top: 25px ;
+    margin-bottom: 15px;
 }
 .right-body-wrapper > h3  {
     font-size: 1.4rem;
@@ -53,7 +53,7 @@
     color: var(--Dark-grayish-blue);
     text-decoration: line-through;
     font-size: 16px;
-    text-decoration-color: var(--Dark-grayish-blue);;
+    text-decoration-color: var(--Dark-grayish-blue);
 }
 
 @media screen and (max-width: 700px){

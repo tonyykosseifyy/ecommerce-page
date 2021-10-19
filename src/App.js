@@ -8,11 +8,12 @@ import "./App.css" ;
 
 function App() {
   const [ menu , setMenu ] = useState(null) ;
+  const [ number , setNumber ] = useState(0);
   
   return (
 	<div className="app">
 		<Navbar state={menu} handleClick={setMenu} />	
-		<Body />
+		<Body number={number} setNumber={setNumber} />
 		<BlackOverflow onClick={() => setMenu(false)} open={menu} />
 		<Menu state={menu} handleClick={setMenu} />
 	</div>
